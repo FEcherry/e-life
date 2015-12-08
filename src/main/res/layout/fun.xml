@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SlidingDrawer
+        android:id="@+id/drawer1"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:handle="@+id/myimage"
+        android:content="@+id/mycontent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageView
+            android:id="@id/myimage"
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/classification"
+            android:background="@drawable/shape"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:id="@id/mycontent">
+
+            <ImageButton
+                android:id="@+id/travel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/green"
+                android:scaleType="fitXY"
+                android:src="@drawable/travel"/>
+
+            <ImageButton
+                android:id="@+id/joke"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/joke"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/purple"/>
+
+            <ImageButton
+                android:id="@+id/daily"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/yellow"
+                android:src="@drawable/daily" />
+
+            <ImageButton
+                android:id="@+id/fashion"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/pink"
+                android:src="@drawable/fashion"/>
+
+            <ImageButton
+                android:id="@+id/anecdote"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/red"
+                android:src="@drawable/anecdotes"/>
+        </LinearLayout>
+
+    </SlidingDrawer>
+
+
+
+</RelativeLayout>

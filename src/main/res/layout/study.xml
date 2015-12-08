@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <SlidingDrawer
+       android:id="@+id/drawer1"
+       android:layout_width="match_parent"
+       android:layout_height="115dp"
+       android:handle="@+id/myimage"
+       android:content="@+id/mycontent"
+       android:orientation="vertical"
+       android:gravity="bottom"
+       android:layout_alignParentBottom="true">
+
+
+       <ImageView
+           android:id="@id/myimage"
+           android:layout_width="120dp"
+           android:layout_height="65dp"
+           android:src="@drawable/classification"
+           android:scaleType="fitXY"
+           android:background="@drawable/shape"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:orientation="horizontal"
+           android:background="#ffffff"
+           android:id="@id/mycontent">
+
+           <ImageButton
+               android:id="@+id/cet4"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:scaleType="fitXY"
+               android:layout_marginLeft="30dp"
+               android:src="@drawable/cet4"
+               android:background="@drawable/yellow" />
+
+           <ImageButton
+               android:id="@+id/cet6"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_marginLeft="35dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/cet6"
+               android:background="@drawable/green" />
+
+           <ImageButton
+               android:id="@+id/toefl"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_marginLeft="35dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/toefl"
+               android:background="@drawable/purple" />
+
+           <ImageButton
+               android:id="@+id/ielts"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_marginLeft="35dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/ielts"
+               android:background="@drawable/red" />
+       </LinearLayout>
+
+   </SlidingDrawer>
+
+
+
+</RelativeLayout>

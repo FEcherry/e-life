@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/my_actionBarStyle</item>
+    </style>
+
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/my_actionBarStyle</item>
+        <item name="android:itemBackground">#FFFFFF</item>
+    </style>
+
+    <style name="my_actionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#4dd0c8</item>
+    </style>
+
+
+
+</resources>

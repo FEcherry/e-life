@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="60dp"
+        android:orientation="horizontal" android:background="#4dd0c8"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="E-Life"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="27sp"-->
+            <!--android:layout_marginLeft="150dp"></TextView>-->
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/elife" />
+
+
+        <ImageButton
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_name"
+            android:layout_marginLeft="90dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/hometag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/homeicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/home"
+                android:clickable="false"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/hometext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#bbc3c2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/studytag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/studyicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/study"
+                android:gravity="center"
+                android:clickable="false"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/studytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Study"
+                android:textColor="#bbc3c2"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/funtag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/funicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fun"
+                android:gravity="center"
+                android:clickable="false"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/funtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fun"
+                android:textColor="#bbc3c2"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/newstag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/newsicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/news"
+                android:gravity="center"
+                android:clickable="false"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/newstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News"
+                android:textColor="#bbc3c2"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
